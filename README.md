@@ -30,4 +30,3 @@ WorldWise is an interactive and user-friendly application that helps travelers k
 ### Start the development server
 
 ```npm run dev```
-
