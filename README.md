@@ -1,6 +1,6 @@
-# WorldWise
+# WorldWide
 
-_WorldWise_ is a React-based travel app designed to enhance your global adventures by keeping track of your visited locations.
+_WorldWide_ is a React-based travel app designed to enhance your global adventures by keeping track of your visited locations.
 <br />
 Created using Vite/React.
 
@@ -8,7 +8,7 @@ Created using Vite/React.
 
 ## Introduction
 
-WorldWise is an interactive and user-friendly application that helps travelers keep a log of places they've visited. It allows users to add new locations, view a list of all locations, and access details about each one.
+WorldWide is an interactive and user-friendly application that helps travelers keep a log of places they've visited. It allows users to add new locations, view a list of all locations, and access details about each one.
 
 ## Features
 

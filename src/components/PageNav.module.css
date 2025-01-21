@@ -40,7 +40,7 @@
     text-decoration: none;
     color: var(--color-light--2);
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -65,6 +65,11 @@ a.ctaLink:visited {
         height: 29rem;
         margin-top: 0;
         padding-top: 9rem;
+    }
+
+    .nav a:link,
+    .nav a:visited {
+        font-size: 1.5rem;
     }
 }
 
