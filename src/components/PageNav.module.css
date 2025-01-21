@@ -1,34 +1,108 @@
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    position: relative;
+}
+
+.menuBtn {
+    width: 3rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    z-index: 11;
+
+    cursor: pointer;
 }
 
 .nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
+    display: none;
+}
+
+.nav ul.isOpen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18rem;
+    height: 26rem;
+    background-color: var(--color-dark--1);
+    opacity: 0.97;
+    z-index: 10;
+    margin-right: -1rem;
+    margin-top: -0.5rem;
+    padding-top: 7rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
 }
 
 .nav a:link,
 .nav a:visited {
-  text-decoration: none;
-  color: var(--color-light--2);
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 600;
+    text-decoration: none;
+    color: var(--color-light--2);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-/* CSS Modules feature */
 .nav a:global(.active) {
-  color: var(--color-brand--2);
+    color: var(--color-brand--2);
 }
 
 a.ctaLink:link,
 a.ctaLink:visited {
-  background-color: var(--color-brand--2);
-  color: var(--color-dark--0);
-  padding: 0.8rem 2rem;
-  border-radius: 7px;
+    background-color: var(--color-brand--2);
+    color: var(--color-dark--0);
+    padding: 0.8rem 2rem;
+    border-radius: 7px;
+}
+
+@media (width >= 36em) {
+    .menuBtn {
+        top: 1rem;
+    }
+
+    .nav ul.isOpen {
+        height: 29rem;
+        margin-top: 0;
+        padding-top: 9rem;
+    }
+}
+
+@media (width >= 48em) {
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menuBtn {
+        display: none;
+    }
+
+    .nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .nav ul.isOpen {
+        display: none;
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: inherit;
+        opacity: 1;
+        z-index: auto;
+        margin-right: 0;
+        margin-top: 0;
+        padding-top: 0;
+
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
 }

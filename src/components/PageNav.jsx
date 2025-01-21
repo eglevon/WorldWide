@@ -1,12 +1,22 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './PageNav.module.css';
 import Logo from './Logo';
 
 function PageNav() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    function handleToggleMenu() {
+        setIsOpen((open) => !open);
+    }
+
     return (
         <nav className={styles.nav}>
             <Logo />
-            <ul>
+            <div className={styles.menuBtn} onClick={handleToggleMenu}>
+                <img src={isOpen ? '/crossed-icon.svg' : '/burger-icon.svg'} alt='Menu button' />
+            </div>
+            <ul className={isOpen ? styles.isOpen : ''}>
                 <li>
                     <NavLink to='/pricing'>Pricing</NavLink>
                 </li>
