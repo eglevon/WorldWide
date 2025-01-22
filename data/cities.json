@@ -1,15 +1,15 @@
 {
   "cities": [
     {
-      "id": "7797",
-      "cityName": "San Fernando de Henares",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2025-01-17T17:29:58.041Z",
+      "id": "332a",
+      "cityName": "Prague",
+      "country": "Czechia",
+      "emoji": "🇨🇿",
+      "date": "2025-01-22T18:41:11.286Z",
       "notes": "",
       "position": {
-        "lat": "40.413496049701955",
-        "lng": "-3.5156250000000004"
+        "lat": "50.09415525230204",
+        "lng": "14.471740722656252"
       }
     }
   ]
