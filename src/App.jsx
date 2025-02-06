@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import { CitiesProvider } from './contexts/CitiesContext';
-import { AuthProvider } from './contexts/fakeAuthContext';
+import { AuthProvider } from './contexts/FakeAuthContext';
 import ProtectedRoute from './pages/ProtectedRoute';
 import SpinnerFullPage from './components/SpinnerFullPage';
 
