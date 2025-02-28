@@ -8,7 +8,7 @@ Created using Vite/React.
 
 ## Introduction
 
-WorldWide is an interactive and user-friendly application that helps travelers keep a log of places they've visited. It allows users to add new locations, view a list of all locations, and access details about each one.
+WorldWide is an interactive and user-friendly application that helps travellers keep a log of places they've visited. It allows users to add new locations, view a list of all locations, and access details about each one.
 
 ## Features
 
